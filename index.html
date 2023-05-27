@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calorie and Protein Tracker</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>Calorie and Protein Tracker</h1>
+
+  <div id="meal-container">
+    <h2>Enter Meal Details</h2>
+    <label for="calories">Calories:</label>
+    <input type="number" id="calories" placeholder="Enter calories">
+
+    <label for="protein">Protein:</label>
+    <input type="number" id="protein" placeholder="Enter protein">
+
+    <button id="add-meal-btn">Add Meal</button>
+    <br>
+    <label for="custom-food">Other Food:</label>
+    <input type="text" id="custom-food" placeholder="Enter food item">
+  </div>
+
+  <div id="totals-container">
+    <h2>Totals</h2>
+    <p>Total Calories: <span id="total-calories">0</span></p>
+    <p>Total Protein: <span id="total-protein">0</span></p>
+    <button id="reset-btn">Reset</button>
+  </div>
+
+  <div id="food-container">
+    <h2>Add Food Items</h2>
+    <button onclick="addFoodItem('Salmon')">Add Salmon</button>
+    <button onclick="addFoodItem('Syntha Protein Bar')">Add Syntha Protein Bar</button>
+    <button onclick="addFoodItem('Ground Chicken (1 lb)')">Add Ground Chicken (1 lb)</button>
+    <button onclick="addFoodItem('Carton of Egg Whites')">Add Carton of Egg Whites</button>
+    <button onclick="addFoodItem('Greek Yogurt (3/4 cup)')">Add Greek Yogurt (3/4 cup)</button>
+    <button onclick="addFoodItem('Kirkland Chewy Bar')">Add Kirkland Chewy Bar</button>
+    <button onclick="addFoodItem('Kirkland Protein Bar')">Add Kirkland Protein Bar</button>
+  </div>
+
+  <div id="food-list-container">
+    <h2>Selected Food Items</h2>
+    <ul></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
